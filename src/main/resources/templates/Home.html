@@ -1,0 +1,15 @@
+<h4 xmlns:th="http://www.w3.org/1999/xhtml" xmlns:th="http://www.w3.org/1999/xhtml"
+    xmlns:th="http://www.w3.org/1999/xhtml" xmlns:th="http://www.w3.org/1999/xhtml"
+    xmlns:th="http://www.w3.org/1999/xhtml" xmlns:th="http://www.w3.org/1999/xhtml">Country List</h4>
+<tr th:each="country: ${countries}">
+    <td th:text="${country}"></td>
+    <td><br/></td>
+</tr>
+<h4>User List</h4>
+<tr th:each="myuser: ${myuserAttribute}">
+    <td th:text="${myuser.id}"></td>
+    <td th:text="${myuser.name}"></td>
+    <td th:text="${myuser.email}"></td>
+    <td><br/></td>
+</tr>
+
